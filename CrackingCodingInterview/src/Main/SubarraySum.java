@@ -12,7 +12,7 @@ public class SubarraySum {
 		
 		int total = 0;
 		int count = 0;
-		storage.put(0,1);
+		storage.put(0,1); 
 		for(int i = 0; i<nums.length;i++) {
 			total += nums[i];
 			if(storage.containsKey(total-k)) {

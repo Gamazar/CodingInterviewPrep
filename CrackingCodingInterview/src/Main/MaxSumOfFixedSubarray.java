@@ -12,7 +12,7 @@ public class MaxSumOfFixedSubarray {
 			if(size!=k) {
 				max += arr[i];
 				size++;
-			}
+			} 
 			else {
 				int temp = max - arr[i-k] + arr[i];
 				max = Math.max(temp, max);
